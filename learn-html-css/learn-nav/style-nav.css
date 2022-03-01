@@ -1,0 +1,57 @@
+:root{
+    --pink: pink;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    margin: 0;
+    background-color:rgb(180, 220, 243);
+}
+
+#navbar{
+    width: 100vw;
+    background-color: rgb(71, 131, 236);
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 0;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 3em;
+    position: relative;
+    transition: all ease-in-out 250ms;
+}
+
+li a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: var(--pink);
+    bottom: 2em;
+    transition: all ease-in-out 250ms;
+    
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+li a:hover{
+    color: var(--pink);
+}
+
+li:first-child{
+    margin-right: auto;
+    margin-left: 3em;
+}

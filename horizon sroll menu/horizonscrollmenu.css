@@ -1,0 +1,17 @@
+.wrapper {
+    max-height:110px;
+    border: 1px;
+    display: flex;
+    overflow-x: auto;
+}
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+.wrapper .item {
+    min-width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #ddd;
+    margin-left: 2px;
+}

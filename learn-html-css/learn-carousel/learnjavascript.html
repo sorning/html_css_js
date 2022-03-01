@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id='demo'>this is a test</p>
+        <input id='demo1' type="text">
+        <script>
+            document.write('<h1>hi</h1>')
+            function myFunction()
+            {
+                x=document.getElementById('demo');
+                x.innerHTML='this had been changed';
+            }
+            function myfun()
+            {
+                x=document.getElementById('demo')
+                x.style.color='#ff0000';
+            }
+            function myapp()
+            {
+                var x=document.getElementById('demo1').value;
+                if(x==''||isNaN(x))
+                {
+                    alert('not number')
+                }
+            }
+        </script>
+        <button type='button' onclick="alert('welcome')"> click</button>
+        <button type="button" onclick="myFunction()">click here</button>
+        <button type="button" onclick="myfun()">change co</button>
+        <button type="button" onclick="myapp()">numbero</button>
+
+    </body>
+</html>
